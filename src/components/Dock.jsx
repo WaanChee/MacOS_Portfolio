@@ -73,7 +73,7 @@ const Dock = () => {
               aria-label={name}
               data-tooltip-id="dock-tooltip"
               data-tooltip-content={name}
-              datat-tooltip-delay-show={150}
+              data-tooltip-delay-show={150}
               disabled={!canOpen}
               onClick={() => toggleApp({ id, canOpen })}
             >
@@ -87,7 +87,7 @@ const Dock = () => {
           </div>
         ))}
 
-        <Tooltip id="dock-tooltip" top="top" className="tooltip" />
+        <Tooltip id="dock-tooltip" place="top" className="tooltip" />
       </div>
     </section>
   );
